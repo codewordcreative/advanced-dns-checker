@@ -51,7 +51,7 @@ Happy to add more. Any that don't exist aren't output in the file, anyway, so it
 ----
 
 ## Why I made it
-I genuinely couldn't find anything that scraped every single useful or even essential DNS record in one go. Most relied only on the tools available with NSLookup, too. It feels like an essential backup, really. It's also a lot easier to copy between text records when migrating between sites. Then I noticed it was interesting to see what other websites were doing
+I genuinely couldn't find anything that scraped every single useful or even essential DNS record in one go, with the option to save it to an appropriately named file for backup. Most that did exist relied only on the tools available with NSLookup, too. It feels like an essential backup, really. It's also a lot easier to copy between text files when migrating between sites. Then I noticed it was interesting to see what other websites were doing.
 
 ## Ideal use case
 Backups. Migrations. General peace of mind.
