@@ -7,7 +7,7 @@ dig: command-line utility, usually included by default on Linux/macOS. On Window
 ----
 
 # Set up
-It's a command-line interface. Just download it wherever you want to run it 
+It's a command-line interface. Just download it and save it wherever you want to run it 
 
 ## Customise the output directory if desired
 It defaults to a subdirectory called dns-output.
