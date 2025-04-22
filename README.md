@@ -12,6 +12,9 @@ It's a command-line interface. Just download it and save it wherever you want to
 ## Customise the output directory if desired
 It defaults to a subdirectory called dns-output.
 
+## Caveat: Subdomains
+Subdomain records currently aren't covered at all. I'll soon add support for common subdomain formats, but less usual ones will take more work.
+
 ----
 
 # To use
