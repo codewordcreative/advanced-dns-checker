@@ -23,6 +23,10 @@ In the default setup, it will gather all known DNS records and save the output t
 
 You can use arguments to reduce the scope, print the output just to the console, or output to both the console and the drive.
 
+## Multiple domains
+node advanceddns.js example.com,example.de
+You can include multiple domains at once. Separate them with a comma and nothing else.
+
 ## Arguments
 ### -o or --overview	
 This pulls a trimmed-down list of key records of interest when generally inspecting the data, e.g. for sustainability or security purposes.
@@ -34,7 +38,7 @@ Outputs the results to the console instead of just saving a file.
 Saves the results to a timestamped .txt file (this is default behaviour).
 
 ### A combination
-node advanceddns.js example.com -o -p -s
+node advanceddns.js example.com,example.de -o -p -s
 This would fetch the overview DNS records from example.com, output them to the console, and save them to disk.
 
 ----
