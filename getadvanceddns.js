@@ -18,21 +18,28 @@ const overviewRecordTypes = [
 
 // CLI arguments
 const args = process.argv.slice(2);
-const domain = args[0];
+const input = args[0];
 const options = args.slice(1).map(arg => arg.toLowerCase());
 
 const useOverview = options.includes('-o') || options.includes('--overview');
 const printToConsole = options.includes('-p') || options.includes('--print');
-const saveToFile = options.includes('-s') || options.includes('--save') || options.length === 0;
+const saveToFile = options.includes('-s') || options.includes('--save') || useOverview || options.length === 0;
 
-if (!domain) {
-  console.error('❗ Usage: node clean-dns-checker.js <domain> [options]');
+if (!input) {
+  console.error('Usage: node getadvanceddns.js <domain or domains, comma-separated without space> [options]');
   console.error('Options:');
   console.error('  -o, --overview   Only fetch overview DNS records (e.g., inspecting security and sustainability)');
-  console.error('  -p, --print      Print DNS results to the console');
-  console.error('  -s, --save       Save results to a file (default, but can be combined with print option)');
-  console.error('Example:       node getadvanceddns.js example.com -o -p -s');
-  console.error('Get the overview DNS records from example.com, display these in the console and save them to a text file.');
+  console.error('  -p, --print      Print DNS results *only* to the console');
+  console.error('  -s, --save       (Also) save DNS results to a file (default, but can be combined with the print option)');
+  console.error('Example:       node getadvanceddns.js example.com,example.org,example.net -o -p -s');
+  process.exit(1);
+}
+
+// Process the domain(s) (comma-separated, no spaces)
+let domains = input.split(',').map(domain => domain.trim()).filter(Boolean);
+
+if (domains.length === 0) {
+  console.error('No valid domains provided.');
   process.exit(1);
 }
 
@@ -73,7 +80,7 @@ async function getDnsRecords(domain, types) {
 async function getAllDnsRecords(domain, types, print, save) {
   const { output, notFound } = await getDnsRecords(domain, types);
 
-    if (print) {
+  if (print) {
     console.log(output);
   }
 
@@ -99,4 +106,21 @@ async function getAllDnsRecords(domain, types, print, save) {
   }
 }
 
-getAllDnsRecords(domain, recordTypes, printToConsole, saveToFile);
+// Process all domains
+async function processDomains(domains, recordTypes, print, save) {
+  for (const domain of domains) {
+    console.log(`Fetching DNS records for ${domain}...`);
+    await getAllDnsRecords(domain, recordTypes, print, save);
+  }
+}
+
+// If `-s` is explicitly mentioned, both save the file and display on console
+if (printToConsole && saveToFile) {
+  console.log('Ready to print and save results...');
+} else if (printToConsole) {
+  console.log('Ready to print results...');
+} else if (saveToFile) {
+  console.log('Ready to save results...');
+}
+
+processDomains(domains, recordTypes, printToConsole, saveToFile);
