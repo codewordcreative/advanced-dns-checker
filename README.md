@@ -1,3 +1,7 @@
+# NOTE:
+Version 2 with subdomain support coming soon. I'm testing it. It works. I'm just weighing up the impact of different approaches and the most efficient way to avoid wildcard results. It can be done, it's just a matter of defining the best approach. I was thinking of including a separate option to query authoritative nameservers, but since these, too, sometimes have wildcards, the benefit is not guaranteed. Therefore, I'm more likely to just update the original version and integrate the check developed for that approach into the main release. On the other hand... I'm really excited by how much people like even the first version. :) This second version delivers absolutely everything. I just need to make it work better with nameservers that use wildcards. My proposed solution is to simply include a warning if wildcard entries are detected, as it makes it impossible to detect individual A or AAAA subdomain records.
+
+
 # Advanced DNS checker
 A CLI node.JS tool for fetching and logging all DNS records for backup and inspection.
 ## Dependencies
