@@ -9,7 +9,7 @@ const saveDirectory = 'DNS-output';
 
 // DNS record types for main domain
 const fullRecordTypes = [
-  'A', 'AAAA', 'CNAME', 'MX', 'NS', 'SOA', 'DNSKEY', 'DS', 'CDNSKEY', 'CDS', 'CAA', 'LOC', 'NAPTR', 'SMIMEA', 'SSHFP', 'TLSA', 'TXT'
+  'A', 'AAAA', 'CNAME', 'MX', 'NS', 'SOA', 'DNSKEY', 'DS', 'CDNSKEY', 'CDS', 'CAA', 'LOC', 'NAPTR', 'SMIMEA', 'SSHFP', 'TLSA', 'SRV', 'CERT', 'NSEC', 'NSEC3PARAM', 'RRSIG', 'LOC', 'TXT'
 ];
 
 // DNS record types and the subdomains to check for subdomains when probed in bulk
@@ -33,7 +33,7 @@ const recordGroups = {
     'api', 'gateway', 'vault', '_lyncdiscover', '_enterpriseregistration',
   ],
   'TXT': [
-    '_google._domainkey', '_dmarc', 'selector1_domainkey', 'selector2_domainkey', 'zohoverify', '_domainconnect', '_atproto', 'default_bimi', '_acme-challenge', 'm1._domainkey','mg',
+    '_google._domainkey', '_dmarc', 'selector1_domainkey', 'selector2_domainkey', 'zohoverify', '_domainconnect', '_atproto', 'default_bimi', '_acme-challenge', 'm1._domainkey','mg','_mta-sts',
   ],
   'CNAME': [
     '_google._domainkey', '_zmverify',  '_amazonses', '_mailgun', 'fm1._domainkey', 'fm2._domainkey','fm3._domainkey', 's1._domainkey', 's2._domainkey', 'mail._domainkey', 'mailo._domainkey', 'mesmtp._domainkey', '_tiktok', 'funnels', 'enterpriseenrollment', 'enterpriseregistration', 'lyncdiscover', 'autodiscover',
