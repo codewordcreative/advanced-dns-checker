@@ -74,7 +74,7 @@ const printToConsole = options.includes('-p') || options.includes('--print');
 const saveAndPrintToConsole = options.includes('-ps') || options.includes('--printsave');
 const useExtended = options.includes('-x') || options.includes('--extended');
 const useOverview = options.includes('-o') || options.includes('--overview');
-const useNameservers = options.includes('-ns') || options.includes('-nameserver');
+const useNameservers = options.includes('-ns') || options.includes('--nameserver');
 const saveToFile = !printToConsole;
 const recordTypes = useOverview ? ['A', 'AAAA', 'MX', 'NS', 'TXT', 'CNAME'] : fullRecordTypes;
 
