@@ -44,18 +44,18 @@ See above. You can now test custom subdomains like this: node advanceddnschecker
 # To use
 Navigate to the file, then use it like this:
 
-``node advanceddnsv2.js example.com
+`node advanceddnsv2.js example.com`
 
 In the default setup, it will gather all known DNS records on the main domain and save the output to a subdirectory called dns-output in an appropriately named text file.
 
 You can use arguments to reduce the scope (overview, -o), print the output just to the console (print, -p), expand the scope to an extensive standardised list of subdomains (extended, -x), switch to using the authoritative nameservers (nameserver, -ns), or output to both the console and the drive (print and save, -ps).
 
 ## Multiple domains
-node advanceddnsv2.js example.com example.de
+`node advanceddnsv2.js example.com example.de`
 CHANGED: You can include multiple domains at once. Separate them with a space.
 
 ## Custom subdomains
-node advanceddnsv2.js example.com%sub1,sub2 example.de%sub3,sub4
+`node advanceddnsv2.js example.com%sub1,sub2 example.de%sub3,sub4`
 CHANGED: You can include custom subdomains, which will be tested against the same records as the main domain. Add directly after the domain with a % in front, and separate them with a comma without a space. Use this for any important subdomains unlikely to show up in a general probe.
 
 ## Arguments
@@ -72,24 +72,24 @@ Switch to pulling the results from the authoritative nameserver defined in the N
 Outputs the results to the console BUT ALSO saves the output to disk as usual.
 
 ### A combination
-node advanceddns.js example.com,example.de -o -p -s
+`node advanceddns.js example.com,example.de -o -p -s`
 This would fetch the overview DNS records from example.com, output them to the console, and save them to disk.
 
 ----
 
 ## Full records checked on main domains and custom subdomain entries:
-  'A', 'AAAA', 'CNAME', 'MX', 'NS', 'SOA',
+  `'A', 'AAAA', 'CNAME', 'MX', 'NS', 'SOA',
   'DNSKEY', 'DS', 'CDNSKEY', 'CDS', 'CAA', 'LOC',
-  'NAPTR', 'SMIMEA', 'SSHFP', 'TLSA', 'TXT'.
+  'NAPTR', 'SMIMEA', 'SSHFP', 'TLSA', 'TXT'.`
 
 ## Overview records:
-CHANGED, reduced to: 'A', 'AAAA', 'MX', 'NS', 'TXT', 'CNAME'
+CHANGED, reduced to: `'A', 'AAAA', 'MX', 'NS', 'TXT', 'CNAME'`
 
 ## Subdomains
 These are organised in a complicated way to maximise efficiency, performance, and accuracy. Too many checks and it'd take a long time, and generate bad data. Please excuse the formatting - it's pretty much a straight copy from the arrays.
 Each array is a list of records probed for, and the contents are the subdomains (or subdomain-like entries) we are looking for in the DNS. If you spot a mistake, please submit it as an issue, email me, or whatever else. I'll fix it. It's not unlikely! Equally, if it's an omission, let me know. I won't want to or be able to accommodate every use case, but there are a lot of services out there and it's hard to know what the up-to-date info is if I don't use them myself. Appreciated
 
-  'A,AAAA,CNAME,TXT': 'www', 'cdn', 'static', 'assets', 'media', 'img', 'js', 'css', 'fonts', 'calendar', 'drive', 'docs'
+  `'A,AAAA,CNAME,TXT': 'www', 'cdn', 'static', 'assets', 'media', 'img', 'js', 'css', 'fonts', 'calendar', 'drive', 'docs'
   'A,AAAA': 'crm', 'erp', 'shop', 'store', 'uat', 'pages', 'ipv4', 'ipv6', 'imap', 'pop', '_sip'
   'A,CNAME,SRV': 'webmail', 'autodiscover'
   'A,AAAA,MX,TXT,SPF,DKIM,DMARC': 'mail'
@@ -97,7 +97,7 @@ Each array is a list of records probed for, and the contents are the subdomains 
   'A,AAAA,CNAME,SRV,TXT': 'api', 'gateway', 'vault', '_lyncdiscover', '_enterpriseregistration'
   'TXT': '_google._domainkey', '_dmarc', 'selector1_domainkey', 'selector2_domainkey', 'zohoverify', '_domainconnect', '_atproto', 'default_bimi', '_acme-challenge', 'm1._domainkey','mg'
   'CNAME': '_google._domainkey', '_zmverify',  '_amazonses', '_mailgun', 'fm1._domainkey', 'fm2._domainkey','fm3._domainkey', 's1._domainkey', 's2._domainkey', 'mail._domainkey', 'mailo._domainkey', 'mesmtp._domainkey', '_tiktok', 'funnels', 'enterpriseenrollment', 'enterpriseregistration', 'lyncdiscover', 'autodiscover'
-  'SRV': '_imaps._tcp', '_pop3s._tcp', '_sip._tls', '_sipfederationtls._tcp', '_autodiscover._tcp', '_submission._tcp', '_submissions._tcp', '_imap._tcp', '_imaps._tcp', '_pop3._tcp', '_pop3s._tcp', '_jmap._tcp', '_smtps._tcp', '_autodiscover._tcp', '_tls', '_cf.tls', '_carddav._tcp', '_carddavs._tcp', '_caldav._tcp', '_caldavs._tcp'
+  'SRV': '_imaps._tcp', '_pop3s._tcp', '_sip._tls', '_sipfederationtls._tcp', '_autodiscover._tcp', '_submission._tcp', '_submissions._tcp', '_imap._tcp', '_imaps._tcp', '_pop3._tcp', '_pop3s._tcp', '_jmap._tcp', '_smtps._tcp', '_autodiscover._tcp', '_tls', '_cf.tls', '_carddav._tcp', '_carddavs._tcp', '_caldav._tcp', '_caldavs._tcp'`
   
 ----
 
@@ -130,14 +130,14 @@ Subdomain records currently aren't covered at all. I'll soon add support for com
 # To use
 Navigate to the file, then use it like this:
 
-node advanceddns.js example.com
+`node advanceddns.js example.com`
 
 In the default setup, it will gather all known DNS records and save the output to a subdirectory called dns-output in an appropriately named text file.
 
 You can use arguments to reduce the scope, print the output just to the console, or output to both the console and the drive.
 
 ## Multiple domains
-node advanceddns.js example.com,example.de
+`node advanceddns.js example.com,example.de`
 You can include multiple domains at once. Separate them with a comma and nothing else.
 
 ## Arguments
@@ -151,16 +151,16 @@ Outputs the results to the console instead of just saving a file.
 Saves the results to a timestamped .txt file (this is default behaviour).
 
 ### A combination
-node advanceddns.js example.com,example.de -o -p -s
+`node advanceddns.js example.com,example.de -o -p -s`
 This would fetch the overview DNS records from example.com, output them to the console, and save them to disk.
 
 ----
 
 ## The full records
-'A', 'AAAA', 'CNAME', 'MX', 'NS', 'TXT', 'SRV', 'PTR', 'SOA', 'CAA', 'AFSDB', 'APL', 'CDNSKEY', 'CDS', 'CERT', 'CSYNC', 'DHCID', 'DLV', 'DNAME', 'DNSKEY', 'DS', 'HINFO', 'HIP', 'IPSECKEY', 'IXFR', 'KEY', 'KX', 'LOC', 'NAPTR', 'NSEC', 'NSEC3', 'NSEC3PARAM', 'OPENPGPKEY', 'OPT', 'RP', 'RRSIG', 'SIG', 'SMIMEA', 'SSHFP', 'TA', 'TKEY', 'TLSA', 'TSIG', 'URI', 'ZONEMD'
+`'A', 'AAAA', 'CNAME', 'MX', 'NS', 'TXT', 'SRV', 'PTR', 'SOA', 'CAA', 'AFSDB', 'APL', 'CDNSKEY', 'CDS', 'CERT', 'CSYNC', 'DHCID', 'DLV', 'DNAME', 'DNSKEY', 'DS', 'HINFO', 'HIP', 'IPSECKEY', 'IXFR', 'KEY', 'KX', 'LOC', 'NAPTR', 'NSEC', 'NSEC3', 'NSEC3PARAM', 'OPENPGPKEY', 'OPT', 'RP', 'RRSIG', 'SIG', 'SMIMEA', 'SSHFP', 'TA', 'TKEY', 'TLSA', 'TSIG', 'URI', 'ZONEMD'`
 
 ## The overview records
-'A', 'AAAA', 'CNAME', 'MX', 'NS', 'TXT', 'SOA', 'CAA', 'DNSKEY', 'DS', 'SSHFP'
+`'A', 'AAAA', 'CNAME', 'MX', 'NS', 'TXT', 'SOA', 'CAA', 'DNSKEY', 'DS', 'SSHFP'`
 
 ## More?
 Happy to add more. Any that don't exist aren't output in the file, anyway, so it doesn't hurt a lot to add and check for them.
