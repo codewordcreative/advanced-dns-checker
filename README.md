@@ -44,7 +44,7 @@ See above. You can now test custom subdomains like this: node advanceddnschecker
 # To use
 Navigate to the file, then use it like this:
 
-node advanceddnsv2.js example.com
+``node advanceddnsv2.js example.com
 
 In the default setup, it will gather all known DNS records on the main domain and save the output to a subdirectory called dns-output in an appropriately named text file.
 
