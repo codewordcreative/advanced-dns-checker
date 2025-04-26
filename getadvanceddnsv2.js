@@ -125,7 +125,7 @@ function stopSpinner() {
 async function detectPeanuts(domain) {
   try {
     const peanutSubdomain = `peanutspeanutspeanuts.${domain}`;
-    startSpinner(`\n🔎 Checking ${domain}`);
+    startSpinner(`\n👀 Checking ${domain}`);
     
     const { stdout: aStdout } = await execPromise(`dig ${peanutSubdomain} A +short`);
     const aRecords = extractRecords(aStdout);
@@ -139,7 +139,7 @@ async function detectPeanuts(domain) {
     console.log(`🥜 Peanut (wildcard) check for ${domain}: A=${peanutsARecords[domain] || 'None'}, AAAA=${peanutsAAAARecords[domain] || 'None'}`);
     
     if (peanutsARecords[domain] || peanutsAAAARecords[domain]) {
-      console.log('⚠️  Wildcard A/AAAA detected - automatic filtering applied.\n');
+      console.log('⚠️  Wildcard A/AAAA records detected - automatic subdomain filtering applied.\n');
     }
 
   } catch (err) {
@@ -279,15 +279,15 @@ async function processDomains() {
           fs.mkdirSync(saveDirectory, { recursive: true });
 
           await fs.promises.writeFile(filePath, domainOutput);
-          console.log(`✅ Output saved for ${domain} to ${filePath}\n`);
+          console.log(`💾 DNS records for ${domain} saved as ${filePath}\n`);
 
         } catch (err) {
-          console.error(`Error saving output for ${domain}: ${err.message}`);
+          console.error(`Error saving records for o${domain}: ${err.message}`);
         }
       }
 
     } catch (err) {
-      console.error(`Error processing domain ${domain}:`, err);
+      console.error(`Error processing ${domain}:`, err);
       errors.push(domain);
     }
   }
