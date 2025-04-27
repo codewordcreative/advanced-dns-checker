@@ -1,12 +1,12 @@
-# Modified MIT License
+Modified MIT License
 
 (c) 2025 Rosalyn Newell
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, subject to the Additional Terms of Use outlined below, including without limitation the rights to use, copy, modify, merge, publish, and distribute copies of the Software, and to permit persons to whom the Software is furnished to do so, provided that the following conditions are met:
 
-    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+• The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-    Compliance with the Additional Terms of Use is mandatory for all users of the Software.
+• Compliance with the Additional Terms of Use is mandatory for all users of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 Additional Terms of Use
@@ -15,24 +15,28 @@ Although this Software is provided under the Modified MIT License, the following
 
 You are welcome to:
 
-    Use, modify, and share the code for personal, educational, and internal business purposes.
+• Use, modify, and share the code for personal, educational, and internal business purposes (with appropriate credit to the author).
 
-    Fork the repository, submit pull requests, and contribute improvements (which will be credited).
+• Fork the repository, submit pull requests, and contribute improvements (which will be credited).
 
-    Reference or build upon this work for non-commercial, private, or internal purposes only.
+• Reference or build upon this work for non-commercial, private, or internal purposes only.
 
-    Use this script to improve the sustainability, efficiency, or general performance of your own website builds, whether for commercial or non-commercial projects.
+• Use this script to improve the sustainability, efficiency, or general performance of your own website builds, whether for commercial or non-commercial projects.
 
 You are not permitted to:
 
-    Integrate this code (in whole or in part) into products, services, or tools offered for sale or placed behind a paywall.
+• Integrate this code (in whole or in part) into products, services, or tools offered for sale or placed behind a paywall.
 
-    Charge others for access to this code as a service, whether modified or original.
+• Charge others for access to this code as a service, whether modified or original.
 
-    Distribute modified or original versions of the Software outside of forks of the repository without attribution and an unmodified link to the original repository.
+• Distribute modified or original versions of the Software outside of forks of the repository without attribution and an unmodified link to the original repository.
 
-    Create a web application, SaaS tool, or other GUI-based service based on this code.
+• Create a web application, SaaS tool, or other GUI-based service based on this code.
 
-    Re-license or sub-license this code under different terms.
+• Re-license or sub-license this code or derived code under different terms.
 
-For commercial licensing inquiries (e.g., building a web-based service), please contact the author via https://codewordcreative.com.
+For commercial licensing inquiries (e.g., building a web-based service), please contact the author via https://codewordcreative.com.   
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+Compliance with these Terms of Use is mandatory for all users of the Software.
