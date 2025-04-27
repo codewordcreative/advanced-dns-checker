@@ -72,8 +72,8 @@ Switch to pulling the results from the authoritative nameserver defined in the N
 Outputs the results to the console BUT ALSO saves the output to disk as usual.
 
 ### A combination
-`node advanceddns.js example.com,example.de -o -p -s`
-This would fetch the overview DNS records from example.com, output them to the console, and save them to disk.
+`node advanceddns.js example.com,example.de%sub,sub1 -o -ps`
+This would fetch the overview DNS records from example.com, example.de, and the records at sub.example.de and sub1.example.de, output them to the console, and save them to disk.
 
 ----
 
