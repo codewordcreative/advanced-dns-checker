@@ -1,43 +1,39 @@
 Additional Terms of Use
+Modified MIT License
 
-Although this script is licensed under the permissive MIT License, the following restriction applies:
+(c) 2025 Rosalyn Newell
 
-Commercial use of this code is not permitted without explicit written consent from the author.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, subject to the Additional Terms of Use outlined below, including without limitation the rights to use, copy, modify, merge, publish, and distribute copies of the Software, and to permit persons to whom the Software is furnished to do so, provided that the following conditions are met:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    Compliance with the Additional Terms of Use is mandatory for all users of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Additional Terms of Use
+
+Although this Software is provided under the Modified MIT License, the following specific restrictions apply:
 
 You are welcome to:
-- Use, modify, and share the code for personal, educational, and internal business purposes.
-- Fork the repository, submit pull requests, and contribute improvements (which will be credited).
-- Reference or build upon this work in non-commercial settings.
-- Use this script to improve the sustainability, efficiency, or general performance of your own website builds, no matter whether these are commercial or non-commercial projects.
 
-You are *not allowed to*:
-- Integrate this code (in whole or in part) into products, services, or tools offered for sale or placed behind a paywall.
-- Charge others for access to this code as a service.
-- Distribute modified or original versions of the script, whether commercially or not, outside of forks of the repository with a clear link to the original author.
-- Create a webapp or other GUI based on this code.
+    Use, modify, and share the code for personal, educational, and internal business purposes.
 
-For commercial licensing inquiries, please visit https://codewordcreative.com to contact the author.
+    Fork the repository, submit pull requests, and contribute improvements (which will be credited).
 
-___
+    Reference or build upon this work for non-commercial, private, or internal purposes only.
 
-MIT License
+    Use this script to improve the sustainability, efficiency, or general performance of your own website builds, whether for commercial or non-commercial projects.
 
-Copyright (c) 2025 Rose Newell
+You are not permitted to:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+    Integrate this code (in whole or in part) into products, services, or tools offered for sale or placed behind a paywall.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    Charge others for access to this code as a service, whether modified or original.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+    Distribute modified or original versions of the Software outside of forks of the repository without attribution and an unmodified link to the original repository.
+
+    Create a web application, SaaS tool, or other GUI-based service based on this code.
+
+    Re-license or sub-license this code under different terms.
+
+For commercial licensing inquiries (e.g., building a web-based service), please contact the author via https://codewordcreative.com.
