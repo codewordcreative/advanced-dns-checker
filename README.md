@@ -177,4 +177,4 @@ Nosing at the third-party usage of big companies and government organisations. S
 ---
 
 ## Special licence terms
-See the notes on the licence tab. Commercial use by companies to improve their own websites is fine. Reselling or redistributing without credit is not. Where there is ambiguity here, the licence notes take precedent.
+See the notes on the licence tab. Commercial use by companies to improve their own websites - as in, the key intent of this code - is fine. Where there is ambiguity here, the licence notes take precedent.
