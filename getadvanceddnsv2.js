@@ -23,7 +23,7 @@ const recordGroups = {
   'A,CNAME,SRV': [
     'webmail', 'autodiscover',
   ],
-  'A,AAAA,TXT,DKIM': [
+  'A,AAAA,TXT': [
     'mail', 'smtp',
   ],
   'A,AAAA,CNAME,SRV,TXT': [
