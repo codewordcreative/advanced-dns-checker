@@ -23,11 +23,8 @@ const recordGroups = {
   'A,CNAME,SRV': [
     'webmail', 'autodiscover',
   ],
-  'A,AAAA,MX,TXT,SPF,DKIM,DMARC': [
-    'mail',
-  ],
-  'A,AAAA,TXT,SPF,DKIM,DMARC': [
-    'smtp',
+  'A,AAAA,TXT,DKIM': [
+    'mail', 'smtp',
   ],
   'A,AAAA,CNAME,SRV,TXT': [
     'api', 'gateway', 'vault', '_lyncdiscover', '_enterpriseregistration',
