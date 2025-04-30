@@ -27,16 +27,16 @@ const recordGroups = {
     'mail', 'smtp',
   ],
   'A,AAAA,CNAME,SRV,TXT': [
-    'api', 'gateway', 'vault', '_lyncdiscover', '_enterpriseregistration',
+    'api', 'gateway', 'vault', 'lyncdiscover', '_enterpriseregistration',
   ],
   'TXT': [
-    '_google._domainkey', '_dmarc', 'selector1_domainkey', 'selector2_domainkey', 'zohoverify', '_domainconnect', '_atproto', 'default_bimi', '_acme-challenge', 'm1._domainkey','mg','_mta-sts',
+    'google._domainkey', 'default._domainkey', '_dmarc', 'selector1_domainkey', 'selector2_domainkey', 'zohoverify', '_domainconnect', '_atproto', 'default_bimi', '_acme-challenge', 'm1._domainkey','mg','_mta-sts', '_spf',
   ],
   'CNAME': [
-    '_google._domainkey', '_zmverify',  '_amazonses', '_mailgun', 'fm1._domainkey', 'fm2._domainkey','fm3._domainkey', 's1._domainkey', 's2._domainkey', 'mail._domainkey', 'mailo._domainkey', 'mesmtp._domainkey', '_tiktok', 'funnels', 'enterpriseenrollment', 'enterpriseregistration', 'lyncdiscover', 'autodiscover',
+    'google._domainkey', '_zmverify',  '_amazonses', '_mailgun', 'fm1._domainkey', 'fm2._domainkey','fm3._domainkey', 's1._domainkey', 's2._domainkey', 'mail._domainkey', 'mailo._domainkey', 'mesmtp._domainkey', '_tiktok', 'funnels', 'enterpriseenrollment', 'enterpriseregistration',
   ],
   'SRV': [
-    '_imaps._tcp', '_pop3s._tcp', '_sip._tls', '_sipfederationtls._tcp', '_autodiscover._tcp', '_submission._tcp', '_submissions._tcp', '_imap._tcp', '_imaps._tcp', '_pop3._tcp', '_pop3s._tcp', '_jmap._tcp', '_smtps._tcp', '_autodiscover._tcp', '_tls', '_cf.tls', '_carddav._tcp', '_carddavs._tcp', '_caldav._tcp', '_caldavs._tcp',
+    '_sip._tls', '_sipfederationtls._tcp', '_autodiscover._tcp', '_submission._tcp', '_submissions._tcp', '_imap._tcp', '_imaps._tcp', '_pop3._tcp', '_jmap._tcp', '_smtps._tcp', '_autodiscover._tcp', '_tls', '_cf.tls', '_carddav._tcp', '_carddavs._tcp', '_caldav._tcp', '_caldavs._tcp',
   ],
 };
 
